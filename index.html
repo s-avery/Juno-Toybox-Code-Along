@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>🎎Toybox Homepage</title>
 </head>
+
 <body>
-    
+	<!-- Skip Link -->
+	<a href="#mainContent" class="skipLink">Skip to main content.</a>
+
+	<!-- Announcement Bar -->
+	<div class="announcements">
+		<div class=wrapper>
+			<p>Complimentary etc</p>
+		</div>
+	</div>
+
+	<!-- Navigation -->
+	<nav class="navBar">
+		<div class=wrapper>
+			<!-- Slide Out Menu -->
+			<input id="openSideMenu" type="checkbox">
+			<label for="openSideMenu">
+				<img src="./assets/menu-button.svg" alt="Menu Button">
+			</label>
+
+			<!-- Slide Out Nav Content -->
+			<div class="slideOutNav">
+				<button>X</button>
+
+				<!-- Menu Content -->
+				<nav>
+					<ul>
+						<li><a href="">Shop</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">News</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!-- NavBar -->
+			<div class="wrapper">
+				<!-- Logo -->
+				<a href="#home"></a>
+
+				<!-- Search and Cart -->
+				<button class="searchIcon"><img src="./assets/search.svg" alt="Search Icon"></button>
+				<a href="#" class="bag"><img src="./assets/shop-bag.svg" alt="Shopping Bag"></a>
+
+				<div class="counter">
+					<p>0</p>
+				</div>
+			</div>
+		</div>
+	</nav>
 </body>
+
 </html>
