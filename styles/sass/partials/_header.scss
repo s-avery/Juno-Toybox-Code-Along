@@ -1,0 +1,16 @@
+header {
+    background-color: $tertiary;
+
+    .wrapper {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerImgContainer,
+    .textContainer {
+        flex-basis: 48%;
+    }
+}

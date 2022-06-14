@@ -1,0 +1,42 @@
+// *Categories
+.categoryList {
+    display: flex;
+    flex-wrap: wrap;
+
+    .items {
+        // *list item styles
+        border-radius: 10%;
+        width: calc((100% / 2) - 50px);
+        margin: 50px 25px 25px;
+        padding: 40px;
+        text-align: center;
+        transition: 0.3s;
+
+        // *img styles
+        img {
+            border-radius: 10%;
+            margin-bottom: 15px;
+        }
+
+        // *hover scaling
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+
+    .itemOne {
+        background-color: $quinary;
+    }
+
+    .itemTwo {
+        background-color: $secondary;
+    }
+
+    .itemThree {
+        background-color: $tertiary;
+    }
+
+    .itemFour {
+        background-color: $quaternary;
+    }
+}

@@ -24,7 +24,7 @@
 
 	<!-- Navigation -->
 	<nav class="navBar">
-		<div class=wrapper>
+		<div class="wrapper">
 			<!-- Slide Out Menu -->
 			<input id="openSideMenu" type="checkbox">
 			<label for="openSideMenu" class="openSideMenuButton">
@@ -49,27 +49,25 @@
 				</nav>
 			</div>
 			<!-- NavBar -->
-			<div class="wrapper">
-				<!-- Logo -->
-				<a href="#home" class="logo">
-					<h1>Toybox</h1>
+			<!-- Logo -->
+			<a href="#home" class="logo">
+				<h1>Toybox</h1>
+			</a>
+
+			<!-- Search and Cart -->
+			<div class="searchCart">
+				<button class="searchIcon">
+					<img src="./assets/search.svg" alt="Search Icon">
+				</button>
+
+				<a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="Shopping Bag">
 				</a>
 
-				<!-- Search and Cart -->
-				<div class="searchCart">
-					<button class="searchIcon">
-						<img src="./assets/search.svg" alt="Search Icon">
-					</button>
-
-					<a href="#" class="bag">
-						<img src="./assets/shop-bag.svg" alt="Shopping Bag">
-					</a>
-
-					<div class="counter smallCopy">
-						<p>0</p>
-					</div>
-				</div><!-- END searchCart -->
-			</div>
+				<div class="counter smallCopy">
+					<p>0</p>
+				</div>
+			</div><!-- END searchCart -->
 		</div>
 	</nav>
 
@@ -80,7 +78,7 @@
 				<img src="./assets/header-image.jpg" alt="A toddler playing with wooden blocks.">
 			</div>
 			<div class="textContainer">
-				<h3>Handcrafted for kids</h3>
+				<h5>Handcrafted for kids</h5>
 				<h2>Go on, let them play with wooden blocks.</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, soluta est ab adipisci quia
 					consectetur ad. Alias nesciunt unde, a totam quibusdam similique rerum animi excepturi quam earum
@@ -97,11 +95,12 @@
 			<div class=wrapper>
 				<h2>Categories</h2>
 				<p>Explore our range of hand-made toys</p>
-				<ul>
+				<ul class="categoryList">
+
 					<!-- Gallery Item 1 -->
 					<li class="items itemOne">
 						<a href="./assets/safari-trio.jpg">
-							<img src="" alt="A toy giraffe, crocodile, and elephant.">
+							<img src="./assets/safari-trio.jpg" alt="A toy giraffe, crocodile, and elephant.">
 							<h4>Safari</h4>
 							<p>Land-dwelling African favourites</p>
 						</a>
@@ -133,6 +132,7 @@
 						<h4>Sale</h4>
 						<p>Act quickly and grab these bargains</p>
 					</li>
+					
 				</ul>
 			</div><!-- END wrapper -->
 		</section>

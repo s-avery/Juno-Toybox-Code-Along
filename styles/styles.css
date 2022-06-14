@@ -408,6 +408,7 @@ section {
   border-top: 1px solid rgba(8, 75, 109, 0.08);
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
   background-color: #fff;
+  z-index: 10;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -419,6 +420,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 .navBar input[type=checkbox] {
   opacity: 0;
@@ -487,4 +489,63 @@ section {
 }
 .buttonWrapper button {
   color: #fff;
+}
+
+header {
+  background-color: #f8fbf3;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .headerImgContainer,
+header .textContainer {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+}
+
+.categoryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.categoryList .items {
+  border-radius: 10%;
+  width: calc(50% - 50px);
+  margin: 50px 25px 25px;
+  padding: 40px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.categoryList .items img {
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+.categoryList .items:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.categoryList .itemOne {
+  background-color: #ffd698;
+}
+.categoryList .itemTwo {
+  background-color: #f4fcff;
+}
+.categoryList .itemThree {
+  background-color: #f8fbf3;
+}
+.categoryList .itemFour {
+  background-color: #fff5f5;
 }
