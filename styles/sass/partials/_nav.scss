@@ -1,4 +1,4 @@
-// Skip Link
+//*Skip Link
 .skipLink {
     position: absolute;
     left: -9999px;
@@ -12,14 +12,14 @@
     }
 }
 
-// Announcements
+//*Announcements
 .announcements {
     text-align: center;
     padding: 10px 0;
 
 }
 
-//Nav Bar
+//*Nav Bar
 .navBar {
     position: sticky;
     top: 0;
@@ -36,6 +36,10 @@
     input[type=checkbox] {
         opacity: 0;
         position: absolute;
+
+        &:checked~.slideOutNav {
+            left: 0;
+        }
     }
 }
 
@@ -51,11 +55,6 @@
         display: flex;
     }
 
-    .searchIcon {
-        background-color: transparent;
-        border: none;
-    }
-
     .counter {
         p {
             width: 24px;
@@ -68,5 +67,40 @@
     }
 }
 
-//Slide Out Nav
-.slideOutNav {}
+//*Slide Out Nav
+.slideOutNav {
+    background: $primary;
+    position: fixed;
+    top: 0;
+    left: -999px;
+    height: 100vh;
+    width: 100%;
+    max-width: 506px;
+    padding: 35px 50px;
+    color: $solidWhite;
+    transition: 0.75s;
+}
+
+.navMenu {
+    a {
+        font-family: $headingFont;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: rgba($color: $solidWhite, $alpha: 1);
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: rgba($color: $solidWhite, $alpha: 0.5);
+        }
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: right;
+
+    button {
+        color: $solidWhite;
+    }
+}
