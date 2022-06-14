@@ -1,3 +1,8 @@
 @import "./partials/setup";
 @import "./partials/variables";
 @import "./partials/typography";
+
+img {
+    max-width: 100%;
+    display: block;
+}
