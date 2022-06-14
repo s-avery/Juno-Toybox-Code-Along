@@ -396,6 +396,7 @@ section {
   top: 0;
   border-top: 1px solid rgba(8, 75, 109, 0.08);
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -418,7 +419,24 @@ section {
   display: -ms-flexbox;
   display: flex;
 }
-
-.slideOutNav {
-  display: none;
+.searchCart .searchIcon,
+.searchCart .bag {
+  margin-right: 15px;
+}
+.searchCart .bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchCart .searchIcon {
+  background-color: transparent;
+  border: none;
+}
+.searchCart .counter p {
+  width: 24px;
+  height: 24px;
+  background-color: #084b6d;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
 }

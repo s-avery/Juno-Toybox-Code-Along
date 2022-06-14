@@ -25,6 +25,7 @@
     top: 0;
     border-top: 1px solid rgba(8, 75, 109, 0.08);
     border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+    background-color: $solidWhite;
 
     .wrapper {
         display: flex;
@@ -43,13 +44,29 @@
 
     .searchIcon,
     .bag {
+        margin-right: 15px;
+    }
+
+    .bag {
         display: flex;
     }
 
-    .
+    .searchIcon {
+        background-color: transparent;
+        border: none;
+    }
+
+    .counter {
+        p {
+            width: 24px;
+            height: 24px;
+            background-color: $primary;
+            color: $solidWhite;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
 }
 
 //Slide Out Nav
-.slideOutNav {
-    display: none;
-}
+.slideOutNav {}
