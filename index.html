@@ -8,6 +8,7 @@
 	<title>🎎Toybox Homepage</title>
 	<!-- FONT AWESOME -->
 	<script src="https://kit.fontawesome.com/fa84358317.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 	<!-- Announcement Bar -->
 	<div class="announcements">
 		<div class=wrapper>
-			<p>Complimentary etc</p>
+			<p class="smallCopy">Complimentary shipping on orders over $50. Discount applied at checkout.</p>
 		</div>
 	</div>
 
@@ -48,19 +49,29 @@
 			<!-- NavBar -->
 			<div class="wrapper">
 				<!-- Logo -->
-				<a href="#home"></a>
+				<a href="#home" class="logo">
+					<h1>Toybox</h1>
+				</a>
 
 				<!-- Search and Cart -->
-				<button class="searchIcon"><img src="./assets/search.svg" alt="Search Icon"></button>
-				<a href="#" class="bag"><img src="./assets/shop-bag.svg" alt="Shopping Bag"></a>
+				<div class="searchCart">
+					<button class="searchIcon">
+						<img src="./assets/search.svg" alt="Search Icon">
+					</button>
 
-				<div class="counter">
-					<p>0</p>
-				</div>
+					<a href="#" class="bag">
+						<img src="./assets/shop-bag.svg" alt="Shopping Bag">
+					</a>
+
+					<div class="counter">
+						<p>0</p>
+					</div>
+				</div><!-- END searchCart -->
 			</div>
 		</div>
 	</nav>
 
+	<!-- HEADER -->
 	<header>
 		<div class=wrapper>
 			<div class="headerImgContainer">
@@ -72,8 +83,8 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, soluta est ab adipisci quia
 					consectetur ad. Alias nesciunt unde, a totam quibusdam similique rerum animi excepturi quam earum
 					molestiae magni?</p>
-				<a href="#shop" class="shopButton">Shop All</a>
-			</div>
+				<a href="#shop" class="shopButton button">Shop All</a>
+			</div><!-- END textContainer -->
 		</div>
 	</header>
 
@@ -121,7 +132,7 @@
 						<p>Act quickly and grab these bargains</p>
 					</li>
 				</ul>
-			</div>
+			</div><!-- END wrapper -->
 		</section>
 
 		<!--Let Them Play Section  -->
@@ -134,9 +145,9 @@
 						Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam
 						porta sed tellus. Cattis pellentesque felis tristique eget purus feugiat massa.
 					</p>
-					<a href="#" class="aboutButton">Learn About Us</a>
-				</div>
-			</div>
+					<a href="#" class="aboutButton button">Learn About Us</a>
+				</div><!-- END playContent -->
+			</div><!-- END wrapper -->
 		</section>
 	</main>
 </body>
@@ -257,7 +268,7 @@
 			</ul> <!-- END navIcons -->
 
 			<!-- COPYRIGHT -->
-			<p>© Copyright Company</p>
+			<p class="copyright smallCopy">© Copyright Company</p>
 
 		</div> <!-- END footerBottom -->
 	</div> <!-- END wrapper -->
